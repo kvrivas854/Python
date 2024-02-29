@@ -1,8 +1,10 @@
 import random
+
 name = "Kelly"
-question = "Should I go to Colombia?"
+question = "Will it rain in the sahara this year?"
 answer = ""
-random_number = random.randint(1,9)
+
+random_number = random.randint(1,10)
 
 if random_number == 1:
   answer = "Yes - Definitely"
@@ -22,10 +24,14 @@ elif random_number == 8:
   answer = "Outlook not so good"
 elif random_number == 9:
   answer = "Very doubtful"
+elif random_number == 10:
+  answer = "This number is out of range"
 else:
   answer = "Error"
 
+if name == "":
+  print("Question: " + question)
+else:
+  print(name + " asks: " + question)
 
-
-print(name + " asks: " + question)
 print("Magic 8-ball's answer: " + answer)
